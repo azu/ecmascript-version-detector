@@ -1,7 +1,8 @@
 "use strict";
 const fs = require("fs");
 const path = require("path");
-const mkdirp = require('mkdirp');
+const mkdirp = require("mkdirp");
+const existSync = require("exists-sync");
 var list = [
     {
         type: "Identifier",
@@ -264,13 +265,12 @@ list.forEach(object => {
 });
 results.forEach(selector => {
     const regExp = /^\/\/([a-zA-Z]*)/;
-    const subRegExp = /\]\[.*?'(.*?)'/;
+    const subRegExp = /\[@.*?=='(.*?)'/;
     const baseName = selector.match(regExp)[1];
     const subName = subRegExp.test(selector) ? ("-" + selector.match(subRegExp)[1]) : "";
     const dirName = baseName + subName;
     // create dir
-    mkdirp.sync(path.join(__dirname, "..", "data", dirName
-    ));
+    mkdirp.sync(path.join(__dirname, "..", "data", dirName));
     const index = {
         js: {
             selector: selector,
@@ -281,5 +281,9 @@ results.forEach(selector => {
         }
     };
     const content = "module.exports = " + JSON.stringify(index.js, null, 4) + ";";
-    fs.writeFileSync(path.join(__dirname, "..", "data", dirName, "index.js"), content, "utf-8");
+    const outputPath = path.join(__dirname, "..", "data", dirName, "index.js");
+    if (existSync(outputPath)) {
+        return;
+    }
+    fs.writeFileSync(outputPath, content, "utf-8");
 });

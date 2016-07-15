@@ -46,6 +46,8 @@
   "dependencies": {
     "astq": "^1.7.1",
     "babylon": "^6.8.4",
+    "exists-sync": "0.0.3",
+    "object.assign": "^4.0.4",
     "unist-util-select": "^1.5.0"
   }
 }
