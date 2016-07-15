@@ -1,0 +1,548 @@
+[
+    {
+        "selector": "//ArrayExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ArrayExpression"
+        }
+    },
+    {
+        "selector": "//ArrayPattern",
+        "version": "ES2015",
+        "en": {
+            "name": "ArrayPattern"
+        }
+    },
+    {
+        "selector": "//ArrowFunctionExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ArrowFunctionExpression"
+        }
+    },
+    {
+        "selector": "//AssignmentExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "AssignmentExpression"
+        }
+    },
+    {
+        "selector": "//AssignmentPattern",
+        "version": "ES2015",
+        "en": {
+            "name": "AssignmentPattern"
+        }
+    },
+    {
+        "selector": "//AwaitExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "AwaitExpression"
+        }
+    },
+    {
+        "selector": "//BinaryExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "BinaryExpression"
+        }
+    },
+    {
+        "selector": "//BindExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "BindExpression"
+        }
+    },
+    {
+        "selector": "//BlockStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "BlockStatement"
+        }
+    },
+    {
+        "selector": "//BooleanLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "BooleanLiteral"
+        }
+    },
+    {
+        "selector": "//BreakStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "BreakStatement"
+        }
+    },
+    {
+        "selector": "//CallExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "CallExpression"
+        }
+    },
+    {
+        "selector": "//CatchClause",
+        "version": "ES2015",
+        "en": {
+            "name": "CatchClause"
+        }
+    },
+    {
+        "selector": "//ClassBody",
+        "version": "ES2015",
+        "en": {
+            "name": "ClassBody"
+        }
+    },
+    {
+        "selector": "//ClassDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "ClassDeclaration"
+        }
+    },
+    {
+        "selector": "//ClassExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ClassExpression"
+        }
+    },
+    {
+        "selector": "//ClassMethod[@kind=='set']",
+        "version": "ES2015",
+        "en": {
+            "name": "ClassMethod"
+        }
+    },
+    {
+        "selector": "//ClassProperty",
+        "version": "ES2015",
+        "en": {
+            "name": "ClassProperty"
+        }
+    },
+    {
+        "selector": "//ConditionalExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ConditionalExpression"
+        }
+    },
+    {
+        "selector": "//ContinueStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ContinueStatement"
+        }
+    },
+    {
+        "selector": "//DebuggerStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "DebuggerStatement"
+        }
+    },
+    {
+        "selector": "//Decorator",
+        "version": "ES2015",
+        "en": {
+            "name": "Decorator"
+        }
+    },
+    {
+        "selector": "//Directive",
+        "version": "ES2015",
+        "en": {
+            "name": "Directive"
+        }
+    },
+    {
+        "selector": "//DirectiveLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "DirectiveLiteral"
+        }
+    },
+    {
+        "selector": "//DoWhileStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "DoWhileStatement"
+        }
+    },
+    {
+        "selector": "//EmptyStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "EmptyStatement"
+        }
+    },
+    {
+        "selector": "//ExportAllDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "ExportAllDeclaration"
+        }
+    },
+    {
+        "selector": "//ExportDefaultDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "ExportDefaultDeclaration"
+        }
+    },
+    {
+        "selector": "//ExportNamedDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "ExportNamedDeclaration"
+        }
+    },
+    {
+        "selector": "//ExportSpecifier",
+        "version": "ES2015",
+        "en": {
+            "name": "ExportSpecifier"
+        }
+    },
+    {
+        "selector": "//ExpressionStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ExpressionStatement"
+        }
+    },
+    {
+        "selector": "//ForInStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ForInStatement"
+        }
+    },
+    {
+        "selector": "//ForOfStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ForOfStatement"
+        }
+    },
+    {
+        "selector": "//ForStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ForStatement"
+        }
+    },
+    {
+        "selector": "//FunctionDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "FunctionDeclaration"
+        }
+    },
+    {
+        "selector": "//FunctionExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "FunctionExpression"
+        }
+    },
+    {
+        "selector": "//Identifier",
+        "version": "ES2015",
+        "en": {
+            "name": "Identifier"
+        }
+    },
+    {
+        "selector": "//IfStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "IfStatement"
+        }
+    },
+    {
+        "selector": "//ImportDeclaration",
+        "version": "ES2015",
+        "en": {
+            "name": "ImportDeclaration"
+        }
+    },
+    {
+        "selector": "//ImportDefaultSpecifier",
+        "version": "ES2015",
+        "en": {
+            "name": "ImportDefaultSpecifier"
+        }
+    },
+    {
+        "selector": "//ImportNamespaceSpecifier",
+        "version": "ES2015",
+        "en": {
+            "name": "ImportNamespaceSpecifier"
+        }
+    },
+    {
+        "selector": "//ImportSpecifier",
+        "version": "ES2015",
+        "en": {
+            "name": "ImportSpecifier"
+        }
+    },
+    {
+        "selector": "//LabeledStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "LabeledStatement"
+        }
+    },
+    {
+        "selector": "//LogicalExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "LogicalExpression"
+        }
+    },
+    {
+        "selector": "//MemberExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "MemberExpression"
+        }
+    },
+    {
+        "selector": "//MetaProperty",
+        "version": "ES2015",
+        "en": {
+            "name": "MetaProperty"
+        }
+    },
+    {
+        "selector": "//NewExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "NewExpression"
+        }
+    },
+    {
+        "selector": "//NullLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "NullLiteral"
+        }
+    },
+    {
+        "selector": "//NumericLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "NumericLiteral"
+        }
+    },
+    {
+        "selector": "//ObjectExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ObjectExpression"
+        }
+    },
+    {
+        "selector": "//ObjectMethod[@kind=='method']",
+        "version": "ES2015",
+        "en": {
+            "name": "ObjectMethod"
+        }
+    },
+    {
+        "selector": "//ObjectPattern",
+        "version": "ES2015",
+        "en": {
+            "name": "ObjectPattern"
+        }
+    },
+    {
+        "selector": "//ObjectProperty",
+        "version": "ES2015",
+        "en": {
+            "name": "ObjectProperty"
+        }
+    },
+    {
+        "selector": "//Program[@sourceType=='module']",
+        "version": "ES2015",
+        "en": {
+            "name": "Program"
+        }
+    },
+    {
+        "selector": "//RegExpLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "RegExpLiteral"
+        }
+    },
+    {
+        "selector": "//RestElement",
+        "version": "ES2015",
+        "en": {
+            "name": "RestElement"
+        }
+    },
+    {
+        "selector": "//RestProperty",
+        "version": "ES2015",
+        "en": {
+            "name": "RestProperty"
+        }
+    },
+    {
+        "selector": "//ReturnStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ReturnStatement"
+        }
+    },
+    {
+        "selector": "//SequenceExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "SequenceExpression"
+        }
+    },
+    {
+        "selector": "//SpreadElement",
+        "version": "ES2015",
+        "en": {
+            "name": "SpreadElement"
+        }
+    },
+    {
+        "selector": "//SpreadProperty",
+        "version": "ES2015",
+        "en": {
+            "name": "SpreadProperty"
+        }
+    },
+    {
+        "selector": "//StringLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "StringLiteral"
+        }
+    },
+    {
+        "selector": "//Super",
+        "version": "ES2015",
+        "en": {
+            "name": "Super"
+        }
+    },
+    {
+        "selector": "//SwitchCase",
+        "version": "ES2015",
+        "en": {
+            "name": "SwitchCase"
+        }
+    },
+    {
+        "selector": "//SwitchStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "SwitchStatement"
+        }
+    },
+    {
+        "selector": "//TaggedTemplateExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "TaggedTemplateExpression"
+        }
+    },
+    {
+        "selector": "//TemplateElement",
+        "version": "ES2015",
+        "en": {
+            "name": "TemplateElement"
+        }
+    },
+    {
+        "selector": "//TemplateLiteral",
+        "version": "ES2015",
+        "en": {
+            "name": "TemplateLiteral"
+        }
+    },
+    {
+        "selector": "//ThisExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "ThisExpression"
+        }
+    },
+    {
+        "selector": "//ThrowStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "ThrowStatement"
+        }
+    },
+    {
+        "selector": "//TryStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "TryStatement"
+        }
+    },
+    {
+        "selector": "//UnaryExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "UnaryExpression"
+        }
+    },
+    {
+        "selector": "//UpdateExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "UpdateExpression"
+        }
+    },
+    {
+        "selector": "//VariableDeclaration[@kind=='const']",
+        "version": "ES2015",
+        "en": {
+            "name": "VariableDeclaration"
+        }
+    },
+    {
+        "selector": "//VariableDeclarator",
+        "version": "ES2015",
+        "en": {
+            "name": "VariableDeclarator"
+        }
+    },
+    {
+        "selector": "//WhileStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "WhileStatement"
+        }
+    },
+    {
+        "selector": "//WithStatement",
+        "version": "ES2015",
+        "en": {
+            "name": "WithStatement"
+        }
+    },
+    {
+        "selector": "//YieldExpression",
+        "version": "ES2015",
+        "en": {
+            "name": "YieldExpression"
+        }
+    }
+]
