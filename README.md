@@ -1,6 +1,6 @@
 # ecmascript-version-detector
 
-ecmascript version detector
+ECMAScript version detector
 
 ## Install
 
@@ -11,6 +11,14 @@ Install with [npm](https://www.npmjs.com/):
 ## Usage
 
 - [ ] Write usage instructions
+
+## Resources
+
+- [babylon/spec.md at master · babel/babylon](https://github.com/babel/babylon/blob/master/ast/spec.md)
+    - AST Spec
+- [rse/astq: Abstract Syntax Tree (AST) Query Engine](https://github.com/rse/astq)
+    - XPath like Query engine for AST
+
 
 ## Changelog
 

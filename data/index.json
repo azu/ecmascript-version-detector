@@ -42,6 +42,13 @@
         }
     },
     {
+        "selector": "//BinaryExpression[@operator=='**']",
+        "version": "2016",
+        "en": {
+            "name": "BinaryExpression exponentiation operator"
+        }
+    },
+    {
         "selector": "//BinaryExpression",
         "version": "3",
         "en": {
@@ -484,7 +491,7 @@
     },
     {
         "selector": "//SpreadProperty",
-        "version": "2015",
+        "version": "proposal",
         "en": {
             "name": "SpreadProperty"
         }

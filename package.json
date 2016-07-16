@@ -13,11 +13,12 @@
   },
   "files": [
     "src/",
-    "lib/"
+    "lib/",
+    "data/"
   ],
   "version": "1.0.0",
   "description": "ecmascript version detector",
-  "main": "lib/ecmascript-version-detector.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
@@ -45,6 +46,7 @@
   },
   "dependencies": {
     "astq": "^1.7.1",
+    "asty": "^1.4.6",
     "babylon": "^6.8.4",
     "exists-sync": "0.0.3",
     "object.assign": "^4.0.4",

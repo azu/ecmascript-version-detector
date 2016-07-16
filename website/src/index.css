@@ -1,0 +1,29 @@
+@import "../node_modules/ress/dist/ress.min.css";
+@import "./**/*.css";
+
+:root {
+    --main-left--width: 50%;
+    --main-right--width: 50%;
+}
+
+html, body, .main, #js-editor {
+    width: 100%;
+    height: 100%;
+}
+
+.main, .main-output {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    border-right: 1px solid #ddddff;
+    position: fixed;
+    width: var(--main-left--width);
+}
+
+.main-output {
+    position: absolute;
+    width: var(--main-right--width);
+    left: var(--main-left--width);
+}

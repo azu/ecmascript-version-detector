@@ -1,0 +1,77 @@
+{
+  "name": "morpheme-match-website",
+  "private": true,
+  "files": [
+    "src/",
+    "lib/"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/",
+    "clean": "rimraf public/build && mkdirp public/build",
+    "start": "npm-run-all clean --parallel watch:css server",
+    "server": "NODE_ENV=development webpack-dev-server -d --hot --content-base ./public --open",
+    "build:js": "NODE_ENV=production webpack -p",
+    "build:css": "postcss --config postcss.config.js",
+    "build": "npm-run-all clean --parallel build:*",
+    "watch:js": "NODE_ENV=development webpack -d --watch",
+    "watch:css": "chokidar --initial 'src/**/*.css' -c 'postcss --config postcss.config.js'",
+    "watch": "npm-run-all clean --parallel watch:*",
+    "prepublish": "npm run --if-present build"
+  },
+  "keywords": [
+    "morpheme",
+    "形態素",
+    "japanese",
+    "text"
+  ],
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-cli": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-jsdoc-to-assert": "^2.0.1",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chokidar-cli": "^1.2.0",
+    "css-loader": "^0.23.1",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.5.3",
+    "npm-run-all": "^1.7.0",
+    "postcss-calc": "^5.2.0",
+    "postcss-cli": "^2.5.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-easy-import": "^1.0.1",
+    "postcss-reporter": "^1.3.3",
+    "power-assert": "^1.4.1",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.8",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "dependencies": {
+    "brace": "^0.8.0",
+    "bulma": "0.0.28",
+    "classname": "0.0.0",
+    "codemirror": "^5.16.0",
+    "decamelize": "^1.2.0",
+    "ecmascript-version-detector": "file:..",
+    "history": "^3.0.0",
+    "kuromojin": "^1.3.0",
+    "lodash.groupby": "^4.4.0",
+    "map-like": "^1.0.1",
+    "object.assign": "^4.0.4",
+    "query-string": "^4.2.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-github-corner": "^0.3.0",
+    "ress": "^1.1.1",
+    "yo-yo": "^1.2.2"
+  }
+}

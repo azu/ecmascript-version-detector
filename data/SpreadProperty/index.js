@@ -1,6 +1,6 @@
 module.exports = {
     "selector": "//SpreadProperty",
-    "version": "2015",
+    "version": "proposal",
     "en": {
         "name": "SpreadProperty"
     }

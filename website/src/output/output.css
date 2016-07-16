@@ -1,0 +1,17 @@
+.node-link {
+    color: #00c4ff;
+    cursor: pointer;
+}
+
+.node-link.is-selected {
+    background: rgba(256, 256, 0, 120);
+}
+
+.output {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.output-versionTitle {
+    margin: 1rem 0;
+}

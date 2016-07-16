@@ -5,7 +5,7 @@ const ASTQ = require("astq");
 const ObjectAssign = require("object.assign");
 const astq = new ASTQ();
 const typeList = require("../data/index.json");
-function parse(code) {
+function parseCode(code) {
     return require("babylon").parse(code, {
         sourceType: "module",
         plugins: [
@@ -26,8 +26,18 @@ function parse(code) {
         ]
     });
 }
-export function detect(code) {
-    const AST = parse(code);
+
+export function detect(code){
+    const results = parse(code);
+    const versions = {};
+    results.forEach(result => {
+        versions[result.version] = true;
+    });
+    return Object.keys(versions);
+}
+
+export function parse(code) {
+    const AST = parseCode(code);
     const r = [];
     typeList.forEach(type => {
         const selector = type.selector;
