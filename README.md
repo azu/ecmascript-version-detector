@@ -2,6 +2,12 @@
 
 ECMAScript version detector
 
+## Online demo
+
+[![screenshot](https://monosnap.com/file/K5fnXQ9ut4wmqvdDFw4BKV8DjzaE23.png)](https://azu.github.io/ecmascript-version-detector/)
+
+Go to [https://azu.github.io/ecmascript-version-detector/](https://azu.github.io/ecmascript-version-detector/)
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
@@ -10,7 +16,7 @@ Install with [npm](https://www.npmjs.com/):
 
 ## Usage
 
-- [ ] Write usage instructions
+
 
 ## Resources
 
