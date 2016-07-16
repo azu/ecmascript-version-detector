@@ -27,13 +27,15 @@
     "build:meta": "node tools/build-index.js",
     "watch": "babel src --out-dir lib --watch --source-maps",
     "prepublish": "npm run build:meta && npm run --if-present build",
-    "test": "npm run build:meta && mocha"
+    "test": "npm run build:meta && mocha",
+    "build:website": "cd website && npm i && npm run build"
   },
   "keywords": [
     "ECMAScript",
     "JavaScript"
   ],
   "devDependencies": {
+    "@alrra/travis-scripts": "^3.0.1",
     "babel-cli": "^6.10.1",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
