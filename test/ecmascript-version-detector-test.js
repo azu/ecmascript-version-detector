@@ -1,7 +1,7 @@
 const assert = require("power-assert");
 import {parse, detect} from "../src/ecmascript-version-detector";
 describe("ecmascript-version-detector-test", function() {
-    describt("#parse", function() {
+    describe("#parse", function() {
         it("should return array", function() {
             const results = parse(`const foo = [];`);
             assert(results.length > 0);
