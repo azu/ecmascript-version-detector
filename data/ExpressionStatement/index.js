@@ -1,6 +1,7 @@
 module.exports = {
     "selector": "//ExpressionStatement",
-    "version": "2015",
+    "trivial": true,
+    "version": "3",
     "en": {
         "name": "ExpressionStatement"
     }

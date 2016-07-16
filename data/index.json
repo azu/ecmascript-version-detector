@@ -21,6 +21,13 @@
         }
     },
     {
+        "selector": "//AssignmentExpression[@operator=='**']",
+        "version": "2016",
+        "en": {
+            "name": "AssignmentExpression exponentiation operator"
+        }
+    },
+    {
         "selector": "//AssignmentExpression",
         "version": "3",
         "en": {
@@ -64,6 +71,7 @@
     },
     {
         "selector": "//BlockStatement",
+        "trivial": true,
         "version": "3",
         "en": {
             "name": "BlockStatement"
@@ -155,7 +163,7 @@
     },
     {
         "selector": "//ClassProperty",
-        "version": "2015",
+        "version": "proposal",
         "en": {
             "name": "ClassProperty"
         }
@@ -246,7 +254,8 @@
     },
     {
         "selector": "//ExpressionStatement",
-        "version": "2015",
+        "trivial": true,
+        "version": "3",
         "en": {
             "name": "ExpressionStatement"
         }
@@ -429,6 +438,7 @@
     },
     {
         "selector": "//Program[@sourceType=='module']",
+        "trivial": true,
         "version": "2015",
         "en": {
             "name": "Program-module"
@@ -436,13 +446,15 @@
     },
     {
         "selector": "//Program[@sourceType=='script']",
+        "trivial": true,
         "version": "2015",
         "en": {
             "name": "Program-script"
         }
     },
     {
-        "selector": "//Program[@sourceType=='module']",
+        "selector": "//Program",
+        "trivial": true,
         "version": "2015",
         "en": {
             "name": "Program"

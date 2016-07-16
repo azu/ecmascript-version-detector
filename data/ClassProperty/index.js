@@ -1,6 +1,6 @@
 module.exports = {
     "selector": "//ClassProperty",
-    "version": "2015",
+    "version": "proposal",
     "en": {
         "name": "ClassProperty"
     }

@@ -13,6 +13,9 @@ export default class Editor {
     }
 
     selectMark(mark) {
+        if (!mark) {
+            return
+        }
         this.selectedMark = mark;
     }
 
@@ -24,10 +27,10 @@ export default class Editor {
 
     render(marks) {
         const createMDNLink = (mark) => {
-            if(mark.en.link) {
+            if (mark.en.link) {
                 return yo`<a href=${mark.en.link} target="mdn">\u{1F4D6}</a>`;
             }
-            const keywords = decamelize(mark.en.name, " ") + ' Glossary -"Parser API"';
+            const keywords = decamelize(mark.en.name, " ") + ' -"Parser API"';
             return yo`<a href="http://mdn.io/${keywords}" target="mdn">\u{1F4D6}</a>`;
         };
         const listItem = (mark) => {

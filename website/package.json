@@ -1,5 +1,5 @@
 {
-  "name": "morpheme-match-website",
+  "name": "ecmascript-version-detector-website",
   "private": true,
   "files": [
     "src/",

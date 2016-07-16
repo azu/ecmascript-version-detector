@@ -1,5 +1,6 @@
 module.exports = {
-    "selector": "//Program[@sourceType=='module']",
+    "selector": "//Program",
+    "trivial": true,
     "version": "2015",
     "en": {
         "name": "Program"
