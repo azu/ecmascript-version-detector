@@ -30,8 +30,13 @@ export default class Editor {
             if (mark.en.link) {
                 return yo`<a href=${mark.en.link} target="mdn">\u{1F4D6}</a>`;
             }
-            const keywords = decamelize(mark.en.name, " ") + ' -"Parser API"';
-            return yo`<a href="http://mdn.io/${keywords}" target="mdn">\u{1F4D6}</a>`;
+            // link to https://github.com/tc39/proposals/search?utf8=%E2%9C%93&q=Class+Property&type=Code
+            const keywords = decamelize(mark.en.name, " ");
+            if (mark.version === "proposal") {
+                return yo`<a href="https://github.com/tc39/proposals/search?utf8=%E2%9C%93&type=Code&q=${encodeURIComponent(keywords)}" target="tc39">\u{1F4D6}</a>`;
+            }
+            const mdnKeywords = keywords + ' -"Parser API"';
+            return yo`<a href="http://mdn.io/${encodeURIComponent(mdnKeywords)}" target="mdn">\u{1F4D6}</a>`;
         };
         const listItem = (mark) => {
             const onClick = () => {

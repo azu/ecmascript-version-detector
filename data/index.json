@@ -282,6 +282,13 @@
         }
     },
     {
+        "selector": "//FunctionDeclaration[@async==true]",
+        "version": "proposal",
+        "en": {
+            "name": "async FunctionDeclaration"
+        }
+    },
+    {
         "selector": "//FunctionDeclaration",
         "version": "3",
         "en": {
