@@ -22,6 +22,11 @@ html, body, .main, #js-editor {
     width: var(--main-left--width);
 }
 
+.main-title {
+    padding-left: 0.2rem;
+    font-size: 1.5rem;
+}
+
 .main-output {
     position: absolute;
     width: var(--main-right--width);
