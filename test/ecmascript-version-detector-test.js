@@ -16,6 +16,17 @@ describe("ecmascript-version-detector-test", function() {
         });
         assert(constResults.length === 1);
     });
+    it("should filter duplicated range", function() {
+        const results = parse(`1 ** 2;`);
+        // not found binary expression
+        assert(results.find(info => {
+            return info.selector === "//BinaryExpression";
+        }) === undefined);
+        // found **
+        assert(results.find(info => {
+            return info.selector === "//BinaryExpression[@operator=='**']";
+        }));
+    });
     describe("#detect", function() {
         it("should return versions", function() {
             var code = `

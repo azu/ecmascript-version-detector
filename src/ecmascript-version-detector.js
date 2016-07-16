@@ -27,7 +27,7 @@ function parseCode(code) {
     });
 }
 
-export function detect(code){
+export function detect(code) {
     const results = parse(code);
     const versions = {};
     results.forEach(result => {
@@ -38,7 +38,19 @@ export function detect(code){
 
 export function parse(code) {
     const AST = parseCode(code);
-    const r = [];
+    const infoList = [];
+    // ignore to add duplicated range
+    const canPushInfo = (type, match) => {
+        const {start, end} = match;
+        const sameRangeInfo = infoList.find(targetInfo => {
+            return targetInfo.node.start === start && targetInfo.node.end === end;
+        });
+        if (!sameRangeInfo) {
+            return true;
+        }
+        // Specificity - prefer detail selector
+        return type.selector.length > sameRangeInfo.selector.length;
+    };
     typeList.forEach(type => {
         const selector = type.selector;
         const results = astq.query(AST, selector);
@@ -46,10 +58,13 @@ export function parse(code) {
             return false;
         }
         results.forEach(match => {
+            if (!canPushInfo(type, match)) {
+                return;
+            }
             const result = ObjectAssign({}, type, {node: match});
-            r.push(result);
+            infoList.push(result);
         });
         return true;
     });
-    return r;
+    return infoList;
 }
