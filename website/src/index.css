@@ -23,8 +23,14 @@ html, body, .main, #js-editor {
 }
 
 .main-title {
-    padding-left: 0.2rem;
+    padding: 0.2rem;
     font-size: 1.5rem;
+    background: #e1edec;
+}
+
+.main-title a {
+    color: black;
+    text-decoration: none;
 }
 
 .main-output {
