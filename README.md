@@ -4,7 +4,7 @@ ECMAScript version detector
 
 ## Online demo
 
-[![screenshot](https://monosnap.com/file/K5fnXQ9ut4wmqvdDFw4BKV8DjzaE23.png)](https://azu.github.io/ecmascript-version-detector/)
+[![screenshot](https://monosnap.com/file/4CdkSilOA0ueFNQT5ovbBzzZkwOLiU.png)](https://azu.github.io/ecmascript-version-detector/)
 
 Go to [https://azu.github.io/ecmascript-version-detector/](https://azu.github.io/ecmascript-version-detector/)
 
