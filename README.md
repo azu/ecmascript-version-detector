@@ -1,4 +1,4 @@
-# ecmascript-version-detector
+# ecmascript-version-detector [![Build Status](https://travis-ci.org/azu/ecmascript-version-detector.svg?branch=master)](https://travis-ci.org/azu/ecmascript-version-detector)
 
 ECMAScript version detector
 
