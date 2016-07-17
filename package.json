@@ -23,10 +23,11 @@
     "test": "test"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
+    "build": "npm run build:meta && npm run build:js",
+    "build:js": "NODE_ENV=production babel src --out-dir lib --source-maps",
     "build:meta": "node tools/build-index.js",
     "watch": "babel src --out-dir lib --watch --source-maps",
-    "prepublish": "npm run build:meta && npm run --if-present build",
+    "prepublish": "npm run --if-present build",
     "test": "npm run build:meta && mocha",
     "build:website": "cd website && npm i && npm run build"
   },

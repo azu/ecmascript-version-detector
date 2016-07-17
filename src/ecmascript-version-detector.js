@@ -7,7 +7,7 @@ const astq = new ASTQ();
 const types = require("../data/index.json");
 /**
  * @param {string} code
- * @param {Object} babylonOptions
+ * @param {Object} [babylonOptions]
  * @returns {Object[]}
  */
 function parseCode(code, babylonOptions) {
@@ -37,7 +37,7 @@ function parseCode(code, babylonOptions) {
  * parse `code` and return `results`.
  * Sometimes, the `parse` function throw parse error.
  * @param {string} code
- * @param {{babylonOptions: Object}} options
+ * @param {{babylonOptions: Object}} [options]
  * @returns {{selector:string, version:string, node: Object, en: Object}[]} results
  * @throws
  */
