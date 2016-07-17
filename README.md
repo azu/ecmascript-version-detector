@@ -1,6 +1,6 @@
 # ecmascript-version-detector [![Build Status](https://travis-ci.org/azu/ecmascript-version-detector.svg?branch=master)](https://travis-ci.org/azu/ecmascript-version-detector)
 
-ECMAScript Version Detector library.
+ECMAScript Version Detection library.
 
 ## Online demo
 
