@@ -1,6 +1,6 @@
 module.exports = {
     "selector": "//Directive",
-    "version": "proposal",
+    "version": "5",
     "en": {
         "name": "Directive"
     }
