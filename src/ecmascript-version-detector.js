@@ -5,8 +5,13 @@ const ASTQ = require("astq");
 const ObjectAssign = require("object.assign");
 const astq = new ASTQ();
 const types = require("../data/index.json");
-function parseCode(code) {
-    return require("babylon").parse(code, {
+/**
+ * @param {string} code
+ * @param {Object} babylonOptions
+ * @returns {Object[]}
+ */
+function parseCode(code, babylonOptions) {
+    const defaultOption = {
         sourceType: "module",
         plugins: [
             "jsx",
@@ -24,18 +29,21 @@ function parseCode(code) {
             "functionBind",
             "functionSent"
         ]
-    });
+    };
+    return require("babylon").parse(code, babylonOptions || defaultOption);
 }
 
 /**
  * parse `code` and return `results`.
  * Sometimes, the `parse` function throw parse error.
  * @param {string} code
+ * @param {{babylonOptions: Object}} options
  * @returns {{selector:string, version:string, node: Object, en: Object}[]} results
  * @throws
  */
-export function parse(code) {
-    const AST = parseCode(code);
+export function parse(code, options = {}) {
+    const babylonOptions = options.babylonOptions;
+    const AST = parseCode(code, babylonOptions);
     const infoList = [];
     // ignore to add duplicated range
     const canPushInfo = (type, match) => {
