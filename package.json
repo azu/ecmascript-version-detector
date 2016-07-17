@@ -33,7 +33,11 @@
   },
   "keywords": [
     "ECMAScript",
-    "JavaScript"
+    "JavaScript",
+    "detection",
+    "detect",
+    "databse",
+    "version"
   ],
   "devDependencies": {
     "@alrra/travis-scripts": "^3.0.1",
