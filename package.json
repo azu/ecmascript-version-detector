@@ -16,7 +16,7 @@
     "lib/",
     "data/"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ecmascript version detector",
   "main": "lib/index.js",
   "directories": {
