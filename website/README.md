@@ -1,17 +1,25 @@
-# Design
+# ecmascript-version-detector demo site
 
-## Navigation history
+https://azu.github.io/ecmascript-version-detector/
 
-### At First time
+## Installation
 
-1. If has not `?text={query}`, return
-2. fill with `{query}` and analyzed
+    npm install
+    # update local ecmascript-version-detector package
+    npm rm ecmascript-version-detector && npm i ../
 
-In other word,
+## Usage
 
-1. Separate save data and change url.
+    npm start
 
-### Typing
+## Contributing
 
-1. Analyze `{query}` and output result
-1. Set `{query}` to navigation `?text={query}`
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## License
+
+MIT
