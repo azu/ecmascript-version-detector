@@ -1,5 +1,5 @@
 const assert = require("power-assert");
-import {parse, detect} from "../src/ecmascript-version-detector";
+import {parse, usedVersions} from "../src/ecmascript-version-detector";
 describe("ecmascript-version-detector-test", function() {
     describe("#parse", function() {
         it("should return array", function() {
@@ -28,19 +28,5 @@ describe("ecmascript-version-detector-test", function() {
                 return info.selector === "//BinaryExpression[@operator=='**']";
             }));
         });
-    });
-    describe("#detect", function() {
-        it("should return versions", function() {
-            var code = `
-const obj = {
-    get prop(){}
-};
-const res = 1 ** 2;
-const foo = {...obj};
-`;
-            const versions = detect(code);
-            assert.deepEqual(versions, ["3", "5", "2015", "2016", "proposal"]);
-        });
-
     });
 });

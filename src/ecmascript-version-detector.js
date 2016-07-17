@@ -4,7 +4,7 @@ const babylon = require("babylon");
 const ASTQ = require("astq");
 const ObjectAssign = require("object.assign");
 const astq = new ASTQ();
-const typeList = require("../data/index.json");
+const types = require("../data/index.json");
 function parseCode(code) {
     return require("babylon").parse(code, {
         sourceType: "module",
@@ -27,15 +27,13 @@ function parseCode(code) {
     });
 }
 
-export function detect(code) {
-    const results = parse(code);
-    const versions = {};
-    results.forEach(result => {
-        versions[result.version] = true;
-    });
-    return Object.keys(versions);
-}
-
+/**
+ * parse `code` and return `results`.
+ * Sometimes, the `parse` function throw parse error.
+ * @param {string} code
+ * @returns {{selector:string, version:string, node: Object, en: Object}[]} results
+ * @throws
+ */
 export function parse(code) {
     const AST = parseCode(code);
     const infoList = [];
@@ -51,7 +49,7 @@ export function parse(code) {
         // Specificity - prefer detail selector
         return type.selector.length > sameRangeInfo.selector.length;
     };
-    typeList.forEach(type => {
+    types.forEach(type => {
         const selector = type.selector;
         const results = astq.query(AST, selector);
         if (results.length === 0) {

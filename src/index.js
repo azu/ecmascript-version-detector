@@ -1,9 +1,8 @@
 // LICENSE : MIT
 "use strict";
-const typeList = require("../data/index.json");
-import {detect, parse} from "./ecmascript-version-detector";
+const types = require("../data/index.json");
+import {parse} from "./ecmascript-version-detector";
 module.exports = {
-    typeList,
-    detect,
+    types,
     parse
 };
