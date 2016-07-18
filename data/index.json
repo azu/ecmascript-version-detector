@@ -437,6 +437,13 @@
         }
     },
     {
+        "selector": "//ObjectProperty[@computed==true]",
+        "version": "2015",
+        "en": {
+            "name": "ComputedPropertyName"
+        }
+    },
+    {
         "selector": "//ObjectProperty",
         "version": "3",
         "en": {
