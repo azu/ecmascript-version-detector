@@ -1,0 +1,110 @@
+/*!
+ * ress.css • v1.1.1
+ * MIT License
+ * github.com/filipelinhares/ress
+ */html{box-sizing:border-box;overflow-y:scroll;-webkit-text-size-adjust:100%}*,:after,:before{box-sizing:inherit}:after,:before{text-decoration:inherit;vertical-align:inherit}*{background-repeat:no-repeat;padding:0;margin:0}audio:not([controls]){display:none;height:0}hr{overflow:visible}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}summary{display:list-item}small{font-size:80%}[hidden],template{display:none}abbr[title]{border-bottom:1px dotted;text-decoration:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace,monospace}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}input{border-radius:0}[type=button],[type=reset],[type=submit] [role=button],button{cursor:pointer}[disabled]{cursor:default}[type=number]{width:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit}optgroup{font-weight:700}button{overflow:visible}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:0;padding:0}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button:-moz-focusring{outline:1px dotted ButtonText}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}button,select{text-transform:none}button,input,select,textarea{background-color:transparent;border-style:none;color:inherit}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}legend{border:0;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}img{border-style:none}progress{vertical-align:baseline}svg:not(:root){overflow:hidden}audio,canvas,progress,video{display:inline-block}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){position:absolute!important;clip:rect(0 0 0 0)!important}}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled]{cursor:default}::selection{background-color:#b3d4fc;color:#000;text-shadow:none}.editor {
+    width: 100%;
+    height: 100%;
+}.cm-s-default {
+    width: 100%;
+    height: 100% !important;
+}.highlight {
+    background: rgba(256, 256, 0, 120);
+}.tooltip {
+    position: relative;
+    box-sizing: border-box;
+    cursor: help;
+}.tooltip::after {
+    content: attr(title);
+    display: inline;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    opacity: 0;
+    width: 230px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5em;
+    z-index: 1000;
+    padding: 0.5em 0.8em;
+    background: rgba(0, 0, 0, 0.8);
+
+    color: #fff;
+    pointer-events: none; /* This prevents the box from apearing when hovered. */
+    -webkit-transition:opacity 250ms, top 250ms;
+    transition: opacity 250ms, top 250ms;
+}.tooltip::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border: solid transparent 5px;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition:opacity 250ms, top 250ms;
+    transition: opacity 250ms, top 250ms;
+}.tooltip:hover {
+    z-index: 2;
+}/* Keeps the info boxes on top of other elements */.tooltip:hover::after,
+.tooltip:hover::before {
+    opacity: 1;
+}.tooltip:hover::after {
+    top: 30px;
+}.tooltip:hover::before {
+    top: 20px;
+}html, body, .main, #js-editor {
+    width: 100%;
+    height: 100%;
+}.main, .main-output {
+    margin: 0;
+    padding: 0;
+}.main {
+    border-right: 1px solid #ddddff;
+    position: fixed;
+    width:50%;
+}.main-title {
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    background: #e1edec;
+}.main-title a {
+    color: black;
+    text-decoration: none;
+}.main-output {
+    position: absolute;
+    width:50%;
+    left:50%;
+}.node-link {
+    color: #00c4ff;
+    cursor: pointer;
+}.node-link.is-selected {
+    background: rgba(256, 256, 0, 120);
+}.output {
+    list-style-position: inside;
+    padding-left: 1rem;
+}.output-versionTitle {
+    margin: 1rem 0;
+}html, body, .main, #js-editor {
+    width: 100%;
+    height: 100%;
+}.main, .main-output {
+    margin: 0;
+    padding: 0;
+}.main {
+    border-right: 1px solid #ddddff;
+    position: fixed;
+    width:50%;
+}.main-title {
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    background: #e1edec;
+}.main-title a {
+    color: black;
+    text-decoration: none;
+}.main-output {
+    position: absolute;
+    width:50%;
+    left:50%;
+}
