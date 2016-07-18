@@ -8,25 +8,38 @@ require("codemirror/addon/mode/overlay.js");
 require("codemirror/mode/javascript/javascript.js");
 require("codemirror/mode/css/css.js");
 
-const defaultText = `export default function friends(state = initialState, action) {  
+const defaultText = `
+// object spread operator example
+export function friends(state = initialState, action) {  
   switch (action.type) {
     case types.ADD_FRIEND:
-      const newId = state.friends[state.friends.length-1] + 1;
       return {
-        friends: state.friends.concat(newId),
         friendsById: {
           ...state.friendsById,
           [newId]: {
-            id: newId,
             name: action.name
           }
         }
       }
-
     default:
       return state;
   }
-}`;
+}
+// Async/Await
+async function countUp() {
+  await delay(1000);
+}
+// Decorator example
+class MyClass extends Component {
+  state = {isLoading: true}
+  
+  @autobind
+  onChange() {}
+  
+  @autobind
+  handleSubmit() {}
+}
+`;
 export default class Editor {
     constructor({selector, selectMark}) {
         this.editor = undefined;
